@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eclipse</title>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+       <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="heading">Eclipse Perspective is Everything.</h1>
+        <hr id="heading1">
+        <div id="read">Read</div>
+        <div id="watch">Watch</div>
+        <div id="example">Eclipse Example</div>
+        <section class="information">
+        <h1>Solar Eclipses</h1>
+        <hr>
+        <div>
+            <h2>Occurrence:</h2>
+            <p>Solar eclipses happen when the Moon passes between the Earth and the Sun, blocking part or all of the Sun's light from reaching the Earth's surface.</p>
+            <h2>Types:</h2>
+            <p>
+                <h2>Total Solar Eclipse:</h2>
+                <p>Occurs when the Moon completely covers the Sun, casting a shadow on a specific region of the Earth.</p>
+                <h2>Partial Solar Eclipse:</h2>
+                <p>Happens when the Moon only partially covers the Sun, resulting in a crescent-shaped Sun.</p>
+                <h2>Annular Solar Eclipse:</h2>
+                <p>Occurs when the Moon covers the center of the Sun, leaving a ring or "annulus" of the Sun's outer edge visible.</p>
+            </p>
+            <h2>Visibility:</h2>
+            <p>Solar eclipses are visible only from specific geographic regions on Earth, depending on the eclipse type and path of totality.</p>
+        </div>
+        <h1>Lunar Eclipses</h1>
+        <hr>
+        <div>
+            <h2>Occurrence:</h2>
+            <p> Lunar eclipses occur when the Earth passes between the Sun and the Moon, causing the Earth's shadow to be cast on the Moon's surface.</p>
+            <h2>Types:</h2>
+            <p>
+                <h2>Total Lunar Eclipse:</h2>
+                <p>The entire Moon is immersed in Earth's shadow, giving it a reddish hue (often called a "Blood Moon").</p>
+                <h2>Partial Lunar Eclipse:</h2>
+                <p>Only a portion of the Moon enters the Earth's shadow, resulting in a partial darkening of the lunar surface.</p>
+            </p>
+            <h2>Visibility:</h2>
+            <p>Lunar eclipses are visible from the entire nighttime hemisphere of Earth.</p>
+        </div>
+        <h1>Frequency</h1>
+        <hr>
+        <p>Eclipses are relatively frequent but may not be visible from a specific location for years. On average, there can be several solar and lunar eclipses in a year, but a total solar eclipse may be visible from a specific location roughly every 18 months.</p>
+        <h1>Path of Totality</h1>
+        <p>The path of totality refers to the narrow strip of Earth's surface where a total solar eclipse is visible. This path varies with each eclipse, and eclipse chasers often travel to specific locations to witness these rare events.</p>
+        <h1>Safety</h1>
+        <hr>
+        <p>It's crucial to emphasize that looking directly at a solar eclipse without proper eye protection can cause permanent eye damage. Observers should use certified solar viewing glasses or indirect viewing methods.</p>
+        <h1>Cultural Significance</h1>
+        <hr>
+        <p>Eclipses have held cultural and historical significance throughout human history, often inspiring myths, legends, and scientific discoveries.</p>
+        <aside>
+            <h1>Take Away:</h1>
+            <hr>
+            <hr>
+            <p>Eclipse occurrences are remarkable celestial phenomena that continue to fascinate people worldwide. They provide opportunities for scientific research, education, and a sense of wonder about the cosmos. As such, eclipse calendars and resources play an essential role in helping enthusiasts and the public track and appreciate these awe-inspiring events.</p>
+        </aside>
+        </section>
+        <section class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/C1B_ZuxWoPw?si=EwxgQQdJm-yat8Hs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+
+        <section class="canvasexample">
+            <canvas id="canvas" width="800" height="600"></canvas>
+            <div><button id="button">Stop</button></div>
+        </section>
+
+
+        <div class = "start"><button>Start Quiz</button></div>
+        
+        <div class = "info-box">
+        
+            <div class = "info-title">Rules of this quiz</div>
+              <div class = "info-list">
+                <div class = "info"><i class = "fas fa-asterisk"></i>  You only have <span>10 seconds</span> for each question.</div>
+                <div class = "info"><i class = "fas fa-asterisk"></i>  You have to select an option before you can go to the next question.</div>
+                <div class = "info"><i class = "fas fa-asterisk"></i>  There's no going back after selecting an option.</div>
+                <div class = "info"><i class = "fas fa-asterisk"></i>  You cannot select an option once the timer goes off.</div>
+                <div class = "info"><i class = "fas fa-asterisk"></i>  You cannot exit the quiz while playing.</div>
+                <div class = "buttons">
+                    <button class = "quit">Exit Quiz</button>
+                    <button class = "cont">Continue</button>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class = "quiz-box">
+            <header>
+                <div class = "title">Quiz App</div>
+                  <div class = "timer">
+                    <div class = "text">Time left </div>
+                    <div class = "sec">10</div>
+                 </div>
+              <div class = "timeline"></div>
+           </header>
+                
+                <!-- question section -->
+                <section>
+                <div class = "question">
+             <!-- question goes in here -->
+                </div>
+                <div class = "option-list">
+                   <div class = "option">
+                       options goes in here
+                    </div>
+                </div>
+                    </section>
+                    
+                    
+       <!-- Quiz footer -->             
+        <footer>
+            <div class = "total-questions">
+       <!-- question count goes in here -->
+            </div>
+            <button class = "next">Next</button>
+        </footer>   
+        </div>
+        
+        <!-- Result section-->
+         <div class = "result-box">
+            <div class = "icon">
+            <!--    <i class = "fa fa-crown"></i>--><img src="https://www.dropbox.com/s/2b81pov6c4nuev3/crown.png?dl=1">
+            </div>
+         <div class = "complete-text">You have completed the quiz !</div>
+         <div class = "score-text"> 
+         <!--   score text goes in here -->
+         </div>
+         <div class = "buttons">
+                <button class = "restart">Replay</button>
+                <button class = "exit">Exit</button>
+         </div>
+      <script src="main.js"></script>
+    </body>
+</html>
