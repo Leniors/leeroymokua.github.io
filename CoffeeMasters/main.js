@@ -35,6 +35,7 @@ window.onload = function() {
             }
        }
     }
+    how_many.value = 0;
     how_many.addEventListener("change", function(){
         if (how_many.value < 0) {
             orderStatement.innerHTML = `You can not order on negative!!!`
@@ -51,6 +52,7 @@ window.onload = function() {
         }
     });
     select.addEventListener("change", function() {
+        how_many.value = 0;
         your_order.innerHTML = `${select.value}: `
         orderStatement.innerHTML = ``
         let type_child = food_types.firstChild;
