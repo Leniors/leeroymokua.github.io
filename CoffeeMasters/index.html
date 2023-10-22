@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dish Masters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <img id="logo" src="cofee logo.jpg" alt="logo">
+        <h1>Dish Masters</h1>
+    </header>
+
+    <section class="order-section">
+        <div class="coffee-section">
+            <h3>MENU</h3>
+            <ul class="item">
+                <li><b class="food">Capuccino</b></li>
+                <li class="type"><span>Lite Form</span><p>$3.20</p></li>
+                <li class="type"><span>Almond Milk</span><p>$3.85</p></li>
+                <li class="type"><span>Duble Espresso</span><p>$3.85</p></li>
+            </ul>
+            <hr>
+            <ul class="item">
+                <li><b class="food">Croissant</b></li>
+                <li class="type"><span>Butter</span><p>$3.45</p></li>
+            </ul>
+            <hr>
+            <ul class="item">
+                <li><b class="food">Chips</b></li>
+                <li class="type"><span>Chips plain</span><p>$1.50</p></li>
+                <li class="type"><span>Chips Masala</span><p>$2.15</p></li>
+            </ul>
+            <hr>
+            <ul class="item">
+                <li><b class="food">Ugali</b></li>
+                <li class="type"><span>Ugali Nyama</span><p>$2.50</p></li>
+                <li class="type"><span>Ugali choma</span><p>$3.00</p></li>
+            </ul>
+        </div>
+        <div class="payment-section">
+            <div class="name">
+                <h3>ORDER</h3>
+                <div class="inputs">
+                    <label for="Order" class="a-label">Name for order:  </label>
+                    <select name="Order" id="my_order"></select>
+                    <br>
+                    <p id="your_order"></p>
+                    <select name="food_type" id="food_types"></select>
+                    <input id="how_many" type="number">
+                </div>
+            </div>
+            <div class="pay">
+                <h3>PAYMENT</h3>
+                <p id="order_statement"></p>
+                <div class="inputs">
+                    <label for="card" class="a-label">Card Number</label>
+                    <input id="card" type="number">
+                </div>
+                <div class="inputs">
+                    <label for="ccv" class="a-label">CCV Number</label>
+                    <input id="ccv" type="number">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="place-order">
+        <table>
+            <tr>
+                <td>Subtotal:</td>
+                <td>$9.65</td>
+            </tr>
+            <tr>
+                <td>Tax:</td>
+                <td>$0.82</td>
+            </tr>
+            <tr>
+                <td>Total:</td>
+                <td>$10.47</td>
+            </tr>
+        </table>
+        <button>Place Order</button>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
