@@ -521,3 +521,9 @@ footer .next:hover{
 .fa-crown{
     color:#ffb500;
 }
+#footer {
+    color: black;
+    position: static;
+    text-align: center;
+    margin: auto;
+}
