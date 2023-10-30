@@ -8,13 +8,18 @@
 }
 
 body {
-    background-image: url("https://i.ibb.co/KmvNHr3/space1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(space1.jpg);
+    max-width: 100%;
+}
+#display {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
 }
 
 canvas {
-    border: 3px solid black;
+    border: none;
     background-color: #FFFFFF;
 }
 #button {
@@ -29,6 +34,7 @@ canvas {
     font-family:'Varela Round', sans-serif;
     font-size:25px;
     font-weight:500;
+    border: none;
 }
 #button:hover {
     background-color: #900603;
@@ -54,12 +60,12 @@ iframe {
 #read {
     color: #FFFFFF;
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
     background-color: white;
     color: black;
     padding: 20px 50px;
-    margin: 10px;
-    left: 5%;
+    /* margin: 10px; */
+    /* left: 5%; */
     border-radius: 20px;
     font-family:'Varela Round', sans-serif;
     font-size:25px;
@@ -76,12 +82,12 @@ iframe {
 #watch {
     position: relative;
     color: #FFFFFF;
-    display: inline-block;
+    /* display: inline-block; */
     background-color: white;
     color: black;
     padding: 20px 50px;
-    margin: 20px;
-    left: 25%;
+    /* margin: 20px; */
+    /* left: 25%; */
     border-radius: 20px;
     font-family:'Varela Round', sans-serif;
     font-size:25px;
@@ -90,12 +96,12 @@ iframe {
 #example {
     position: relative;
     color: #FFFFFF;
-    display: inline-block;
+    /* display: inline-block; */
     background-color: white;
     color: black;
     padding: 20px 50px;
-    margin: 20px;
-    left: 35%;
+    /* margin: 20px; */
+    /* left: 35%; */
     border-radius: 20px;
     font-family:'Varela Round', sans-serif;
     font-size:25px;
@@ -129,12 +135,18 @@ p {
 }
 hr {
     margin-bottom: 2px;
-    /*margin-left: 7px;*/
+    margin-left: 30px;
     width: 270px;
 }
-.start {
+/* .start {
     position: relative;
     left: 43%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+} */
+.start button {
+    position: relative;
+    left: 39.2%;
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -359,11 +371,11 @@ hr {
     cursor:pointer;
     transition:all 0.3s ease;
 }
- /*section .option-list .option:hover{
+section .option-list .option:hover{
     background:transparent;
     color:#004085;
     border:1px solid #b8daff;
-}*/
+}
  .option-list .option:last-child{
     margin-bottom:0px;
 }
@@ -522,8 +534,8 @@ footer .next:hover{
     color:#ffb500;
 }
 #footer {
-    color: black;
+    color: white;
     position: static;
     text-align: center;
-    margin: auto;
+    margin-left: -100px;
 }
