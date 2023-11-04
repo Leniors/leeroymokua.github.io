@@ -12,10 +12,13 @@ body {
     max-width: 100%;
 }
 #display {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 20px;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 canvas {
@@ -42,8 +45,17 @@ canvas {
 }
 .canvasexample {
     display: none;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+.canvasexample canvas {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.canvasexample div {
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 .information {
     color: white;
@@ -60,16 +72,16 @@ iframe {
 #read {
     color: #FFFFFF;
     position: relative;
-    /* display: inline-block; */
     background-color: white;
     color: black;
     padding: 20px 50px;
-    /* margin: 10px; */
-    /* left: 5%; */
+    margin: 10px;
     border-radius: 20px;
     font-family:'Varela Round', sans-serif;
     font-size:25px;
     font-weight:500;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 #read:hover {
     background-color: #900603;
@@ -82,12 +94,11 @@ iframe {
 #watch {
     position: relative;
     color: #FFFFFF;
-    /* display: inline-block; */
     background-color: white;
     color: black;
     padding: 20px 50px;
-    /* margin: 20px; */
-    /* left: 25%; */
+    margin: 10px 10px 10px 32px;
+    /* left: 4%; */
     border-radius: 20px;
     font-family:'Varela Round', sans-serif;
     font-size:25px;
@@ -96,12 +107,10 @@ iframe {
 #example {
     position: relative;
     color: #FFFFFF;
-    /* display: inline-block; */
     background-color: white;
     color: black;
     padding: 20px 50px;
-    /* margin: 20px; */
-    /* left: 35%; */
+    margin: 10px;
     border-radius: 20px;
     font-family:'Varela Round', sans-serif;
     font-size:25px;
@@ -117,14 +126,14 @@ iframe {
     text-align: center;
 }
 #heading1 {
-    position: relative;
-    left: 30%;
+    margin: auto;
     width: 509px;
 }
 h1 {
     font-size: 28px;
     margin: 4px;
     padding: 5px;
+    margin: auto;
 }
 h2 {
     margin: 14px;
@@ -134,21 +143,14 @@ p {
     margin: 3px 30px;
 }
 hr {
-    margin-bottom: 2px;
-    margin-left: 30px;
     width: 270px;
 }
-/* .start {
-    position: relative;
-    left: 43%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-} */
+.start {
+    text-align: center;
+    margin: 40px;
+}
 .start button {
-    position: relative;
-    left: 39.2%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: auto;
 }
 .info-box, .quiz-box, .result-box{
     position:absolute;
@@ -534,8 +536,12 @@ footer .next:hover{
     color:#ffb500;
 }
 #footer {
-    color: white;
-    position: static;
+    height: 60PX;
+    width: 100%;
+    color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
     text-align: center;
-    margin-left: -100px;
+    line-height: 60px;
+    background-color: transparent;
 }

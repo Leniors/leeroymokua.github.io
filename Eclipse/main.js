@@ -21,7 +21,7 @@ draw = () => {
 
     context.beginPath()
     //SUN
-    context.arc(400, 300, 40, 0, 2 * Math.PI)
+    context.arc((canvas.width)/2, (canvas.height)/2, 40, 0, 2 * Math.PI)
     context.fillStyle = "#f96704"
     context.fill()
     context.strokeStyle = "#f96704";
