@@ -10,6 +10,7 @@
 body {
     background-image: url(space1.jpg);
     max-width: 100%;
+    margin-bottom: 100px;
 }
 #display {
     position: relative;
@@ -543,5 +544,6 @@ footer .next:hover{
     bottom: 0;
     text-align: center;
     line-height: 60px;
-    background-color: transparent;
+    background-color: #050f28;
+    margin-left: 0;
 }
